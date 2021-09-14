@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SHE HACKS
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(girls.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+            <div class="subtitle"><h1>SHE HACKS</h1>
+              GET A CHANCE TO GRAB YOUR KNOWLEDGE</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+           
+            <div class="subtitle"><h3>TEAMMATES</h3>
+              <p>
+                1.ATHIRA B SANTHOSH<br><br>
+
+                 2.GOWRISREE S <br> <br>
+
+                 3.BLESSY P S</p></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image2.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+            <div class="subtitle"><h3>VISION</h3>
+              <p>To create a more diverse and inclusive tech world,we need to inspire and empower the next generation of femalerole models to pursue and develop their career in technology and become innovators, leaders and entrepreneurs.Its not always straightforward. It takes time, action and support.Join us on a mission! Together we can make a difference</p></div>
+          </div>
+            
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image3.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+            <div class="subtitle"><h3>MISSION</h3>
+              <p> Empower women and femme non-binary individuals in technology to achieve ,provide them with oppurtunities to explore the tech industry in an inspiring, encouraging,and energizing environment.Create a community of inclusivity within the tech industry.</p></div>
+           </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image4.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+            <div class="subtitle"><h3>WHY WE CHOOSE THIS</h3>
+              <p>We are looking for the opportunity to expand our learning, put to use the skills and experience, work in a team that is inclusive and an environment that helps propel our growth</p></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image5.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+            <div class="subtitle"><h3>EXPECTATIONS</h3>
+              Earn new things<BR><BR>
+              Blend with team mates<BR><BR>
+              The value of varied approaches<BR><BR>
+              Gain insights on my capabilities<BR><BR>
+              Clear communication from instructors</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
